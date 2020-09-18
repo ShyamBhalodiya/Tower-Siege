@@ -7,7 +7,7 @@ class box {
         this.visi = 0;
     }
     display(Colour) {
-        if (this.body.velocity.x < 2 || this.body.velocity.y < 2) {
+        if (this.body.velocity.x < 1 || this.body.velocity.y < 1) {
             this.color = Colour;
             var pos = this.body.position;
             push();
