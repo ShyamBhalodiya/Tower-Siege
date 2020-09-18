@@ -4,7 +4,7 @@ class box {
         this.width = width;
         this.body = Bodies.rectangle(x, y, this.width, this.height);
         World.add(world, this.body);
-        this.visi = 0;
+        this.visi = 255;
     }
     display(Colour) {
         if (this.body.velocity.x < 1 || this.body.velocity.y < 1) {
@@ -20,7 +20,7 @@ class box {
         else {
             push();
             this.visi = this.visi - 10;
-            tint(225, this.visi);
+            tint(255, this.visi);
             World.remove(world, this.body);
             pop();
         }
